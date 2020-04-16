@@ -1,0 +1,7 @@
+{
+  "name": "ios-inappbrowser-broken",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
