@@ -1,7 +1,7 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
+import { InAppBrowser } from '@ionic-native/in-app-browser'
 
 const Home: React.FC = () => {
   return (
@@ -12,12 +12,8 @@ const Home: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+        <IonButton onClick={() => InAppBrowser.create('https://www.google.com')}>Open Google w/ create</IonButton>
+        <IonButton onClick={() => InAppBrowser.create('https://www.google.com').show()}>Open Google w/ show</IonButton>
       </IonContent>
     </IonPage>
   );

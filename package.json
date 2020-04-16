@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@capacitor/core": "2.0.1",
+    "@capacitor/ios": "^2.0.1",
+    "@ionic-enterprise/inappbrowser": "^3.2.4",
+    "@ionic-native/core": "^5.23.0",
     "@ionic/react": "^5.0.7",
     "@ionic/react-router": "^5.0.7",
     "@testing-library/jest-dom": "^4.2.4",
